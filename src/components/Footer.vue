@@ -13,20 +13,20 @@
           <div class="block__right_content"></div>
           <div class="block__right_content">
             <div class="title_content">Company</div>
-            <a href="https://www.kupi.com/contacts" class="link" target="_blank"
+            <a href="/" class="link" target="_blank"
               >Contacts</a
             >
           </div>
           <div class="block__right_content">
             <div class="title_content">Information</div>
             <a
-              href="https://www.kupi.com/payment_security"
+              href="/"
               class="link"
               target="_blank"
               >Security Statement</a
             >
             <a
-              href="https://www.kupi.com/confidential"
+              href="/"
               class="link"
               target="_blank"
               >Privacy Policy</a
