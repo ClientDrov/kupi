@@ -112,6 +112,50 @@
       <div class="wait__content">
         <div class="wait__tickets"></div>
         <div class="text-info-loading">Please wait just a little longer</div>
+        
+        <div class="text-info-cont">
+                    <div class="text-info-descr">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 122.88 101.6"
+                        >
+                            <path
+                                class="cls-1"
+                                d="M4.67,67.27c-14.45-15.53,7.77-38.7,23.81-24C34.13,48.4,42.32,55.9,48,61L93.69,5.3c15.33-15.86,39.53,7.42,24.4,23.36L61.14,96.29a17,17,0,0,1-12.31,5.31h-.2a16.24,16.24,0,0,1-11-4.26c-9.49-8.8-23.09-21.71-32.91-30v0Z"
+                                fill="#23c256"
+                            />
+                        </svg>
+                        <span>
+                            Combining different flights into one smart ticket
+                        </span>
+                    </div>
+                    <div class="text-info-descr">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 122.88 101.6"
+                        >
+                            <path
+                                class="cls-1"
+                                d="M4.67,67.27c-14.45-15.53,7.77-38.7,23.81-24C34.13,48.4,42.32,55.9,48,61L93.69,5.3c15.33-15.86,39.53,7.42,24.4,23.36L61.14,96.29a17,17,0,0,1-12.31,5.31h-.2a16.24,16.24,0,0,1-11-4.26c-9.49-8.8-23.09-21.71-32.91-30v0Z"
+                                fill="#23c256"
+                            />
+                        </svg>
+                        <span> Over 10,000 people fly with us every day </span>
+                    </div>
+                    <div class="text-info-descr">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 122.88 101.6"
+                        >
+                            <path
+                                class="cls-1"
+                                d="M4.67,67.27c-14.45-15.53,7.77-38.7,23.81-24C34.13,48.4,42.32,55.9,48,61L93.69,5.3c15.33-15.86,39.53,7.42,24.4,23.36L61.14,96.29a17,17,0,0,1-12.31,5.31h-.2a16.24,16.24,0,0,1-11-4.26c-9.49-8.8-23.09-21.71-32.91-30v0Z"
+                                fill="#23c256"
+                            />
+                        </svg>
+                        <span> 24/7 online customer service </span>
+                    </div>
+                </div>
       </div>
     </div>
 
@@ -376,5 +420,35 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.text-info-cont {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-info-descr:first-child {
+    margin-left: 0;
+}
+
+.text-info-descr {
+    margin-left: 40px;
+    max-width: 200px;
+}
+
+.text-info-descr svg {
+    height: 16px;
+    width: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .text-info-cont {
+        font-size: 15px;
+    }
 }
 </style>
