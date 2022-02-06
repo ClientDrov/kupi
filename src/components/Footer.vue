@@ -47,7 +47,7 @@
       </div>
       <div class="container__bottom">
         <div class="footer__description">
-          © 2011–2022 Our websites: KUPIBILET.RU, KUPIBILET.COM, KUPI.COM Cheap
+          © 2011–2022 Our websites: KUPIBILET.ORG - Cheap
           flights, reservations and online booking
         </div>
         <div class="footer__payment">
