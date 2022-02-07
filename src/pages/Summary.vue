@@ -285,6 +285,34 @@
               </div>
             </div>
           </div>
+	  <div class="info__forms">
+            <div class="info__input">
+              <label for="null" class="info__label"
+                >Passport or ID number</label
+              >
+              <div class="input__wrapper">
+                <input
+                  type="text"
+                  placeholder=""
+                  autocomplete="no"
+                  class="input"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="info__input">
+              <label for="null" class="info__label">Valid until</label>
+              <div class="input__wrapper">
+                <input
+                  type="text"
+                  placeholder=""
+                  autocomplete="no"
+                  class="input"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
