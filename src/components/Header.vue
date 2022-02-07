@@ -114,6 +114,10 @@ export default {
       return this.list_currency[this.currency];
     },
   },
+  mounted(){
+    if(!localStorage.getItem("currency"))
+      localStorage.setItem("currency", 1)
+  }
 };
 </script>
 
