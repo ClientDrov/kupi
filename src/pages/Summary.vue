@@ -188,7 +188,7 @@
           </div>
         </div>
       </div>
-
+     
       <div class="container__info">
         <div class="info__title">
           <h4 class="info__title_text">Passenger information</h4>
@@ -278,6 +278,22 @@
                 <input
                   type="text"
                   placeholder="Male"
+                  autocomplete="no"
+                  class="input"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+	  <div class="info__forms">
+            <div class="info__input">
+              <label for="null" class="info__label"
+                >Passport or ID number</label
+              >
+              <div class="input__wrapper">
+                <input
+                  type="text"
+                  placeholder=""
                   autocomplete="no"
                   class="input"
                   value=""
