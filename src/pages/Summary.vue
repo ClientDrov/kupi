@@ -65,7 +65,9 @@
           </div>
           <div class="fare__item">
             <div class="fare__item_title">Classic</div>
-            <div class="fare__item_price">{{ currency }}{{ this.$route.params.price }}</div>
+            <div class="fare__item_price">
+              {{ currency }}{{ this.$route.params.price }}
+            </div>
             <div class="fare__item-adv">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +190,7 @@
           </div>
         </div>
       </div>
-     
+
       <div class="container__info">
         <div class="info__title">
           <h4 class="info__title_text">Passenger information</h4>
@@ -285,7 +287,7 @@
               </div>
             </div>
           </div>
-	  <div class="info__forms">
+          <div class="info__forms">
             <div class="info__input">
               <label for="null" class="info__label"
                 >Passport or ID number</label
@@ -353,7 +355,6 @@ import Pagenete from "@/components/Pagenete.vue";
 import FooterVue from "@/components/Footer.vue";
 import TicketVue from "@/components/Ticket.vue";
 import { currency } from "@/plugins/currency";
-
 export default {
   components: {
     HeaderVue,
@@ -528,7 +529,6 @@ export default {
   justify-content: center;
   margin-top: 30px;
 }
-
 .payment_title {
   font-size: 24px;
   font-weight: 600;
@@ -655,7 +655,6 @@ export default {
   flex-wrap: wrap;
   margin-bottom: 8px;
 }
-
 .first__direction {
   font-size: 38px;
   font-weight: 600;
@@ -714,7 +713,6 @@ export default {
     border-top: 0;
   }
 }
-
 @media screen and (max-width: 599px) {
   .container__info {
     margin-bottom: 16px;
@@ -775,7 +773,6 @@ export default {
     width: 100%;
   }
 }
-
 .fare__direction {
   margin-top: 10px;
   margin-bottom: 8px;
@@ -783,13 +780,11 @@ export default {
   font-size: 18px;
   color: #808080;
 }
-
 .fare__container {
   margin-top: -20px;
   padding: 32px;
   padding-top: 0px;
 }
-
 .fare__item {
   padding: 16px 24px 22px;
   border-radius: 8px;
@@ -797,13 +792,11 @@ export default {
   background: #fefdf9;
   max-width: 420px;
 }
-
 .fare__item_title {
   font-size: 15px;
   line-height: 18px;
   font-weight: 600;
 }
-
 .fare__item_price {
   font-size: 24px;
   line-height: 28px;
@@ -811,24 +804,20 @@ export default {
   font-weight: 600;
   margin-bottom: 13px;
 }
-
 .fare__item-adv {
   margin-left: 5px;
   margin-bottom: 5px;
 }
-
 .fare__item-adv svg {
   height: 16px;
   width: 16px;
 }
-
 .fare__item-adv span {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   margin-left: 10px;
 }
-
 .fare__item-btn {
   margin-top: 12px;
   background: #fdf7e8;
@@ -848,14 +837,12 @@ export default {
   transition: 0.15s ease-out;
   transition-property: opacity, box-shadow;
 }
-
 .fare__alert {
   margin: 25px 0 10px;
   padding: 12px 18px;
   background: #e5f5ff;
   border-radius: 8px;
 }
-
 .fare__alert-title {
   color: #333333;
   font-size: 18px;
@@ -864,14 +851,12 @@ export default {
   display: block;
   font-weight: 600;
 }
-
 .fare__alert-descr {
   color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
-
 .info__descr {
   margin-top: 15px;
   display: flex;
@@ -879,12 +864,10 @@ export default {
   align-items: center;
   justify-content: flex-start;
 }
-
 .info__descr svg {
   height: 18px;
   width: 18px;
 }
-
 .info__descr span {
   font-size: 14px;
   font-weight: 400;
