@@ -42,7 +42,7 @@
                 $route.params.arrival_city
               }}</template>
               <template v-slot:button
-                ><div style="display: flex">
+                ><div>
                   <div class="title-details">Qatar Airways</div>
                   <div class="dis-details">Flight QR-338, Boeing777-200LR</div>
                 </div></template
