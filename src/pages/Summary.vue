@@ -65,7 +65,7 @@
           </div>
           <div class="fare__item">
             <div class="fare__item_title">Classic</div>
-            <div class="fare__item_price">${{ this.$route.params.price }}</div>
+            <div class="fare__item_price">{{ currency }}{{ this.$route.params.price }}</div>
             <div class="fare__item-adv">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
