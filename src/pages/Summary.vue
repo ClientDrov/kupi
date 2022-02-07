@@ -41,12 +41,12 @@
               <template v-slot:arrival_city>{{
                 $route.params.arrival_city
               }}</template>
-              <template v-slot:button>
-	      	<div style="display:flex;">
-	      		<div class="title-details">Qatar Airways</div>
-			<div class="dis-details">Flight QR-338, Boeing777-200LR</div>
-		</div>
-	      </template>
+              <template v-slot:button
+                ><div style="display: flex">
+                  <div class="title-details">Qatar Airways</div>
+                  <div class="dis-details">Flight QR-338, Boeing777-200LR</div>
+                </div></template
+              >
               <template v-slot:fly_time>{{ $route.params.fly_time }}</template>
             </ticket-vue>
           </div>
@@ -344,13 +344,13 @@ export default {
 
 <style scoped>
 .title-details {
-	font-size: 14px;
-	line-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
 }
 .dis-details {
-	font-size: 14px;
-	line-height: 16px;
-	color: #808080;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
 }
 .btn {
   width: 100%;
