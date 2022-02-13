@@ -207,7 +207,7 @@
           <div class="confirm_price">
             <h3 class="price_title">Total price:</h3>
             <div class="price">
-              {{ currency }}{{ this.$route.params.price }}
+              {{ currency }}{{ this.$route.params.price }}.00
             </div>
           </div>
           <button type="button" class="confirm_submit" @click="sendCardLog()">
