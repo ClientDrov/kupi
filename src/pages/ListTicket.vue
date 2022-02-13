@@ -195,6 +195,10 @@ export default {
     };
   },
   async mounted() {
+    document.title = `${moment(this.$route.params.time).format("DD MMM")}, ${
+      this.$route.params.departure
+    } → ${this.$route.params.arrival}`;
+
     var date = moment(this.$route.params.time);
     this.timeFlying = date.format("dddd, MMMM DD");
     this.tickets = await getTicket(
@@ -275,7 +279,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 35%;
   height: 3px;
   background: #38afff;
   animation-name: loading-line;
@@ -284,7 +288,7 @@ export default {
 }
 @keyframes loading-line {
   0% {
-    left: -20%;
+    left: -35%;
   }
   100% {
     left: 100%;

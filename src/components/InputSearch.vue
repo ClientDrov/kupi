@@ -16,6 +16,7 @@
               from.placeholder = 'From';
             "
           />
+          <div class="input-code" v-if="from.code">{{ from.code }}</div>
           <div
             class="dropdown_block"
             v-if="from.show && from.search.length > 0"
@@ -51,6 +52,7 @@
               to.placeholder = 'To';
             "
           />
+          <div class="input-code" v-if="to.code">{{ to.code }}</div>
           <div class="dropdown_block" v-if="to.show && to.search.length > 0">
             <ul>
               <li
@@ -351,6 +353,19 @@ export default {
 </script>
 
 <style scoped>
+.input-code {
+  position: absolute;
+  color: #808080;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
+  top: 15px;
+  right: 15px;
+}
 .checkbox_text {
   transition: 0.15s ease-out;
   transition-property: color;
