@@ -231,7 +231,7 @@ export default {
         placeholder: "Depart",
         error: false,
       },
-      business: false,
+      business: JSON.parse(localStorage.getItem("business")) || false,
       option_show: false,
       options: JSON.parse(localStorage.getItem("options")) || {
         adults: 1,
@@ -272,6 +272,7 @@ export default {
             localStorage.setItem("from", JSON.stringify(this.from));
             localStorage.setItem("to", JSON.stringify(this.to));
             localStorage.setItem("options", JSON.stringify(this.options));
+            localStorage.setItem("business", JSON.stringify(this.business));
             localStorage.setItem("depart", depart);
             await this.$router.push({
               name: "Tickets",

@@ -21,5 +21,12 @@ export default {
     SliderInfo,
     MobilApp,
   },
+  mounted() {
+    localStorage.removeItem("from");
+    localStorage.removeItem("to");
+    localStorage.removeItem("options");
+    localStorage.removeItem("business");
+    localStorage.removeItem("depart");
+  },
 };
 </script>
