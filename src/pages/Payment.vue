@@ -181,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <div class="error" v-if="error">Заполните все поля</div>
+              <div class="error" v-if="error">Required field</div>
             </div>
           </div>
         </div>
