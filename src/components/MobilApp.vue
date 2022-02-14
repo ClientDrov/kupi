@@ -22,12 +22,7 @@
             </div>
             <div class="qr__item">
                 <div class="qr__title">QR code with a link to the app:</div>
-                <img
-                    src="//www.kupibilet.ru/cdn/statics/media/qrCode@1x.62392d.png"
-                    srcset="//www.kupibilet.ru/cdn/statics/media/qrCode@2x.a06674.png 2x"
-                    alt="QRCode for apps"
-                    class="qr"
-                />
+                <img src="../assets/img/qr.png" alt="QRCode for apps" class="qr" />
             </div>
         </div>
         <div class="img__block">
