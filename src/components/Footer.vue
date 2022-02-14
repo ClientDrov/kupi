@@ -12,7 +12,7 @@
                 <div class="block__top_left">
                     <button type="button" class="btn">Chat with Customer Care</button>
                     <div class="description_top">
-                        <img src="../assets/img/icon-24.png" />
+                        <img src="../assets/img/icon-24.svg" />
                         We are ready to help you at any time seven days a week
                     </div>
                 </div>
@@ -290,8 +290,8 @@ In the third stage, if the carrier's offer stated in the Order is available, the
 
 <style scoped>
 .footer {
-    background: #ffffff;
-    border-top: 1px solid #dde3eb;
+    color: #ffffff;
+    background: #120f29;
 }
 .block__bottom {
     width: 1176px;
@@ -301,7 +301,7 @@ In the third stage, if the carrier's offer stated in the Order is available, the
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 42px 0;
-    border-top: 1px solid #dde3eb;
+    border-top: 1px solid #1e2128;
 }
 .container__bottom {
     display: flex;
@@ -348,8 +348,8 @@ In the third stage, if the carrier's offer stated in the Order is available, the
     outline: none;
     margin: 0;
     display: inline-block;
-    color: #007acc;
-    background: #f0f5fa;
+    color: #112b3c;
+    background: rgba(156, 203, 235, 0.63);
     font-size: 20px;
     font-weight: 600;
     line-height: 20px;
@@ -366,7 +366,7 @@ In the third stage, if the carrier's offer stated in the Order is available, the
     display: flex;
     margin-top: 12px;
     max-width: 240px;
-    color: #6a7280;
+    color: #ffffff;
 }
 
 .description_top > img {
@@ -565,16 +565,16 @@ In the third stage, if the carrier's offer stated in the Order is available, the
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #36304f;
+    color: #ffffff;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    border: 1px solid #2c2b32;
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
@@ -582,6 +582,7 @@ In the third stage, if the carrier's offer stated in the Order is available, the
     border-radius: 20px;
     padding: 30px;
     max-width: 800px;
+    opacity: 0.98;
 }
 
 .modal-title {
@@ -592,13 +593,13 @@ In the third stage, if the carrier's offer stated in the Order is available, the
 }
 
 .modal-text {
-    color: #333;
     font-size: 16px;
+    padding-right: 25px;
+    font-weight: 300;
     white-space: pre-wrap;
 }
 
 .close {
-    color: #aaa;
     float: right;
     font-size: 40px;
     font-weight: bold;
