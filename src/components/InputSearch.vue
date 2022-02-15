@@ -326,6 +326,7 @@ export default {
 }
 .checkbox_text {
     transition: 0.15s ease-out;
+    color: #000;
     transition-property: color;
     margin-left: 6px;
 }
