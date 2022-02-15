@@ -188,7 +188,7 @@ export default {
   data() {
     return {
       tickets: [],
-      color: ["#ffb40c", "#2aabe8", "#203484", "#ce2633", "#b3d643", "#5c1b69"],
+      color: ["#3D1615", "#0A1756", "#203484", "#ce2633", "#b3d643", "#5c1b69"],
       currency: currency(),
       sort: 1,
       timeFlying: "",
@@ -229,8 +229,8 @@ export default {
   display: block;
   padding: 3px 8px;
   border-radius: 8px;
-  background: #def6e6;
-  color: #23c256;
+  background: #36304f;
+  color: #fff;
   font-weight: 600;
 }
 .time_flying {
@@ -241,7 +241,7 @@ export default {
 }
 .sort-select {
   height: 6px;
-  background-color: #fc6100;
+  background-color: #008bea;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   position: absolute;
@@ -250,7 +250,7 @@ export default {
 }
 .sort-title {
   font-size: 16px;
-  color: #007acc;
+  color: #fff;
   font-weight: 600;
 }
 .sort-discript {
@@ -281,7 +281,7 @@ export default {
   left: 0;
   width: 35%;
   height: 3px;
-  background: #38afff;
+  background: #008bea;
   animation-name: loading-line;
   animation-duration: 1.5s;
   animation-iteration-count: 500;
@@ -303,7 +303,7 @@ export default {
 
 .btn {
   width: 100%;
-  background-color: #ff7d03;
+  background-color: #36304f;
   font-weight: 700;
   letter-spacing: -0.2px;
   padding: 9px 10px;
@@ -355,7 +355,8 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #1c1e2d;
+  color: #fff;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -404,7 +405,8 @@ export default {
 }
 
 .container__search {
-  background-color: #ffffff;
+  border-top: 2px #36304f solid;
+  background-color: #202335;
   width: 100%;
   padding: 1px 0;
 }
@@ -451,7 +453,7 @@ export default {
 .text-info-cont {
   margin-top: 50px;
   font-size: 16px;
-  color: #333333;
+  color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -460,6 +462,11 @@ export default {
 
 .text-info-descr:first-child {
   margin-left: 0;
+}
+
+.text-info-descr > svg {
+  margin-right: 3px;
+  margin-top: 2px;
 }
 
 .text-info-descr {

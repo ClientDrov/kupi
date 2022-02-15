@@ -1,5 +1,5 @@
 <template>
-  <div class="popup" v-if="show">
+  <div class="popup" v-if="!show">
     <div class="popup_body">
       <div class="popup_content">
         <div class="logo">
@@ -91,6 +91,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+}
 .error {
   color: #e64926;
   padding-top: 10px;
@@ -110,6 +113,7 @@ export default {
   border-radius: 8px;
 }
 .popup {
+  z-index: 10;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -126,8 +130,8 @@ export default {
 }
 .popup_content {
   padding: 50px 70px;
-  background: #fff;
-  color: #000;
+  background: #120f29;
+  color: rgba(255, 255, 255, 0.54);
   width: 620px;
   min-height: 580px;
   border-radius: 10px;
@@ -146,7 +150,6 @@ export default {
   margin-bottom: 6px;
   font-size: 18px;
   line-height: 18px;
-  color: #333333;
   user-select: none;
 }
 .wrapper {
@@ -155,13 +158,6 @@ export default {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #fafbfc;
-  border-radius: 8px;
-  border: 1px solid #dde3eb;
-  border-style: solid;
-  transition: 0.15s ease-out;
-  transition-property: border-color;
-  margin-right: 10px;
 }
 .input {
   position: relative;
@@ -177,8 +173,8 @@ export default {
   padding-left: 22px;
   padding-right: 11px;
   font-size: 16px;
-  color: #333333;
-  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #2c2a42;
   border-radius: 8px;
   text-align: center;
 }

@@ -31,8 +31,8 @@ export default {
 
 <style scoped>
 .container {
-  border-bottom: 1px solid #dde3eb;
-  background-color: #ffffff;
+  border-top: 1px solid #36304f;
+  background-color: #202335;
   margin-bottom: 24px;
 }
 .content {

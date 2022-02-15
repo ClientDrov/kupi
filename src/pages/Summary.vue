@@ -22,8 +22,8 @@
             Departure and arrival times are shown in local time
           </span>
         </div>
-        <div class="info__content">
-          <div class="info__forms">
+        <div class="info__content" style="display: flex">
+          <div class="info__forms form_details_bilet">
             <ticket-vue :price="$route.params.price">
               <template v-slot:airline_1>{{
                 $route.params.airline_1
@@ -420,7 +420,7 @@
             <div class="info__input">
               <label for="null" class="info__label">Date of birth</label>
               <div class="input__wrapper">
-                <div class="input-container">
+                <div class="input-container" style="margin-right: 10px">
                   <input
                     type="text"
                     placeholder="Day"
@@ -433,7 +433,7 @@
                     Day is not valid
                   </div>
                 </div>
-                <div class="input-container">
+                <div class="input-container" style="margin-right: 10px">
                   <input
                     type="text"
                     placeholder="Month"
@@ -723,12 +723,14 @@ export default {
 
 <style scoped>
 .sex-container {
-  background-color: #dde3eb;
+  background-color: #2c2a42;
   display: flex;
   border-radius: 8px;
+  border: 1px solid #4a426c;
 }
 .unselect-sex {
-  background: #dde3eb !important;
+  border: none !important;
+  background: #36304f !important;
 }
 .sex-input {
   color: #7d89a1;
@@ -816,7 +818,7 @@ export default {
   padding: 0 0 12px;
 }
 .price {
-  color: #fc6100;
+  color: #007acc;
   font-size: 30px;
   font-weight: 600;
   line-height: 34px;
@@ -862,7 +864,8 @@ export default {
   margin-top: 30px;
 }
 .confirm {
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #202335;
   box-shadow: 0px 4px 10px rgb(98 112 139 / 10%);
   border-radius: 8px;
   margin-bottom: 24px;
@@ -953,11 +956,11 @@ export default {
   padding-left: 22px;
   padding-right: 11px;
   font-size: 16px;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
-  background-color: #fafbfc;
+  background-color: rgba(54, 48, 79, 0.52);
   border-radius: 8px;
-  border: 1px solid #dde3eb;
+  border: 1px solid #36304f;
   border-style: solid;
   outline: none;
 }
@@ -976,16 +979,17 @@ export default {
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.5);
   user-select: none;
 }
 .info__forms {
+  border-radius: 10px;
   display: flex;
   margin-top: 12px;
   flex-wrap: wrap;
 }
 .info__content {
-  border-top: 1px solid #dde3eb;
+  border-top: 1px solid #36304f;
   padding: 32px;
   padding-top: 10px;
 }
@@ -1009,7 +1013,8 @@ export default {
   padding: 32px;
 }
 .container__info {
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #202335;
   box-shadow: 0px 4px 10px rgb(98 112 139 / 10%);
   border-radius: 8px;
   margin-bottom: 24px;
@@ -1023,6 +1028,7 @@ export default {
   align-items: flex-start;
 }
 .content__title {
+  color: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1178,13 +1184,13 @@ export default {
 .fare__item {
   padding: 16px 24px 22px;
   border-radius: 8px;
-  border: 1px solid #dde3eb;
+  border: 1px solid #36304f;
   max-width: 420px;
   margin-left: 20px;
 }
 .fare__item.selected {
-  border: 1px solid #ff9100;
-  background: #fefdf9;
+  border: 1px solid #4a426c;
+  background: rgba(54, 48, 79, 0.28);
 }
 .fare__item:first-child {
   margin-left: 0;
@@ -1218,7 +1224,7 @@ export default {
 .fare__item-btn {
   margin-top: 12px;
   color: #ffffff;
-  background: #0f99f5;
+  background: rgba(54, 48, 79, 0.78);
   font-family: inherit;
   border: none;
   outline: none;
@@ -1236,18 +1242,18 @@ export default {
   cursor: pointer;
 }
 .fare__item-btn.selected {
-  background: #fdf7e8;
-  color: #808080;
+  background: rgba(0, 139, 234, 0.49);
+  color: #ccc;
   cursor: default;
 }
 .fare__alert {
   margin: 25px 0 10px;
   padding: 12px 18px;
-  background: #e5f5ff;
+  background: rgba(0, 139, 234, 0.2);
   border-radius: 8px;
 }
 .fare__alert-title {
-  color: #333333;
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -1255,7 +1261,7 @@ export default {
   font-weight: 600;
 }
 .fare__alert-descr {
-  color: #333333;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1289,6 +1295,9 @@ export default {
   }
 }
 
+.form_details_bilet {
+  border: 2px solid #36304f;
+}
 .fare__text_small {
   font-size: 14px;
   font-weight: 400;

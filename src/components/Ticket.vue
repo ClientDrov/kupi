@@ -170,7 +170,7 @@ export default {
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
-  color: #333333;
+  color: #fff;
 }
 .line__text {
   font-size: 13px;
@@ -230,7 +230,7 @@ export default {
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
-  color: #333333;
+  color: #fff;
   margin-bottom: -5px;
   margin-top: 4px;
 }
@@ -255,9 +255,6 @@ export default {
   -webkit-box-align: start;
 }
 .container {
-  background: #ffffff;
-  border: 1px solid #cad3de;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 8px;
@@ -266,7 +263,7 @@ export default {
 .content {
   display: flex;
   width: 100%;
-  background: #ffffff;
+  background: #202335;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -ms-flex-align: flex-start;
@@ -283,7 +280,7 @@ export default {
   display: flex;
   padding: 24px 24px 20px 29px;
   width: 30%;
-  border-left: 1px solid #cad3de;
+  border-left: 1px solid #151a31;
   align-self: stretch;
   cursor: default;
   flex-direction: column;
@@ -318,7 +315,7 @@ export default {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #007acc;
+  color: #008bea;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
@@ -407,9 +404,9 @@ export default {
 }
 .content__fare {
   width: 100%;
-  background: #fdf7e8;
+  background: rgba(54, 48, 79, 0.7);
   padding: 26px;
-  border-top: 1px solid #dde3eb;
+  border-top: 1px solid rgba(21, 26, 49, 0.76);
 }
 .fare__title {
   font-size: 24px;
@@ -424,7 +421,7 @@ export default {
 }
 .fare__item {
   width: 260px;
-  background: #ffffff;
+  background: #202335;
   border: 1px solid #cad3de;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
   padding: 18px 24px 16px;

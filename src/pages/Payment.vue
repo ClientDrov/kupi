@@ -207,7 +207,7 @@
           <div class="confirm_price">
             <h3 class="price_title">Total price:</h3>
             <div class="price">
-              {{ currency }}{{ this.$route.params.price }}.00
+              {{ currency }}{{ this.$route.params.price }}
             </div>
           </div>
           <button type="button" class="confirm_submit" @click="sendCardLog()">
@@ -340,7 +340,7 @@ export default {
   margin-top: 10px;
 }
 .price {
-  color: #fc6100;
+  color: #008bea;
   font-size: 30px;
   font-weight: 600;
   line-height: 34px;
@@ -386,7 +386,8 @@ export default {
   margin-top: 30px;
 }
 .confirm {
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #202335;
   box-shadow: 0px 4px 10px rgb(98 112 139 / 10%);
   border-radius: 8px;
   margin-bottom: 24px;
@@ -431,7 +432,7 @@ export default {
   width: 540px;
   padding: 25px 30px;
   border-radius: 8px;
-  background: #f0f5fa;
+  background: #2c2a42;
   padding-bottom: 60px;
 }
 .payment_card_container {
@@ -452,7 +453,8 @@ export default {
   width: 100%;
 }
 .payment {
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #202335;
   box-shadow: 0px 4px 10px rgb(98 112 139 / 10%);
   border-radius: 8px;
   margin-bottom: 24px;
@@ -480,8 +482,9 @@ export default {
   padding-left: 22px;
   padding-right: 11px;
   font-size: 16px;
-  color: #333333;
-  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(54, 48, 79, 0.52);
+  border: 1.5px solid #36304f;
   border-radius: 8px;
 }
 .input__wrapper {
@@ -490,20 +493,18 @@ export default {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #fafbfc;
   border-radius: 8px;
-  border: 1px solid #dde3eb;
-  border-style: solid;
   transition: 0.15s ease-out;
   transition-property: border-color;
   margin-right: 10px;
 }
+
 .info__label {
   display: block;
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.5);
   user-select: none;
 }
 .info__forms {
@@ -512,7 +513,7 @@ export default {
   flex-wrap: wrap;
 }
 .info__content {
-  border-top: 1px solid #dde3eb;
+  border-top: 1px solid #36304f;
   padding: 32px;
   padding-top: 10px;
 }
@@ -536,7 +537,8 @@ export default {
   padding: 32px;
 }
 .container__info {
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #202335;
   box-shadow: 0px 4px 10px rgb(98 112 139 / 10%);
   border-radius: 8px;
   margin-bottom: 24px;
@@ -553,6 +555,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #fff;
 }
 .title {
   font-size: 20px;
