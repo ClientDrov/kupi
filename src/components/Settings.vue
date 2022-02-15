@@ -57,8 +57,8 @@
         </div>
         <div class="slider-container">
             <div class="slider-track"></div>
-            <input type="range" min="0" max="1000" value="0" />
-            <input type="range" min="0" max="1000" value="1000" />
+            <input type="range" min="0" max="1000" value="0" class="slider-1" @input="fillColorSlider()" />
+            <input type="range" min="0" max="1000" value="1000" class="slider-2" @input="fillColorSlider()" />
         </div>
 
         <div class="divider"></div>
@@ -107,7 +107,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        fillColorSlider() {
+            let sliderOne = document.getElementsByClassName("slider-1")[0];
+            let sliderTwo = document.getElementsByClassName("slider-2")[0];
+            let sliderTrack = document.getElementsByClassName("slider-track")[0];
+            let sliderMaxValue = document.getElementsByClassName("slider-1")[0].max;
+            let percent1 = (sliderOne.value / sliderMaxValue) * 100;
+            let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+            sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+        },
+    },
+};
 </script>
 
 <style scoped>
