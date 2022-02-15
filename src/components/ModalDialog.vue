@@ -1,5 +1,5 @@
 <template>
-  <div class="popup" v-if="!show">
+  <div class="popup" v-if="show">
     <div class="popup_body">
       <div class="popup_content">
         <div class="logo">
