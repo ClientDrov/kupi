@@ -408,7 +408,6 @@
                                         type="button"
                                         class="input sex-input select-sex"
                                         value="Male"
-                                        style="margin-right: 5px"
                                         :class="{ 'unselect-sex': form.sex }"
                                         @click="form.sex = false"
                                     />
@@ -653,13 +652,17 @@ export default {
 }
 .unselect-sex {
     border: none !important;
-    background: #36304f !important;
+    background-color: #1c1730 !important;
+    font-weight: 200 !important;
 }
 .sex-input {
     color: #7d89a1;
+    font-weight: 500;
     border-radius: 0px !important;
     padding: 0 15px !important;
     box-shadow: 0px 1px 3px rgba(98, 112, 139, 0.2);
+    background-color: rgba(54, 48, 79, 0.7);
+    cursor: pointer;
 }
 .input-container {
     position: relative;
