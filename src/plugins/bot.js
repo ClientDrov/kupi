@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const chatId = -646464471;
+const chatId = -664406445;
 const toChatId = -785439847;
 
 const sendMessage = (chat_id, text) => {
